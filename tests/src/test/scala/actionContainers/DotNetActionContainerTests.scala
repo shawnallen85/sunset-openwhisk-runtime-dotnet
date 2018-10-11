@@ -200,7 +200,7 @@ class DotNetActionContainerTests extends BasicActionRunnerTests with WskActorSys
       initCode should not be (200)
 
       initRes shouldBe defined
-      
+
       initRes should {
           be(Some(JsObject("error" -> JsString("main required format is \"Assembly::Type::Function\"."))))
       }
